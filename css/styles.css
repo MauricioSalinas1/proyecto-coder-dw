@@ -1,3 +1,4 @@
+/* === REINICIO DE CSS === */
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +31,10 @@ a{
     text-decoration-line: none;
 }
 
+/* === FIN REINICIO DE CSS === */
+
+/* === CLASS UNIVERSALES === */
+
 .oculto{
     display: none;
 }
@@ -42,6 +47,44 @@ a{
 .bg-negro{
     background-color: #0D0B0E;
 }
+
+.padding-0{
+    padding: 0px;
+}
+
+.subrayado{
+    text-decoration-line: underline;
+}
+
+.texto-destacado1{
+    font-family: 'Nunito Sans';
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.main-fondoblanco{
+    box-shadow: inset 0px 0px 50px 12px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor-titulo-pag{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.titulo-pag{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    color: #0D0B0E;
+}
+
+/* === FIN CLASS UNIVERSALES === */
+
+/* === HEADER === */
 
 .navbar-nav{
     color: #FFFFFF;
@@ -74,11 +117,9 @@ a{
 
 }
 
-.subrayado{
-    text-decoration-line: underline;
-}
+/* === FIN HEADER === */
 
-/* ============ INICIO DE FOOTER ============*/
+/* === FOOTER ===*/
 
 .footer{
     background-color: #0D0B0E;
@@ -170,9 +211,9 @@ a{
     fill: #FDF346
 }
 
-/* ============ FIN DE FOOTER ============*/
+/* === FIN FOOTER ===*/
 
-/* ========== Inicio ========== */
+/* === PAGINA INDEX === */
 
 .main1__div1{
     height: 650px;
@@ -226,33 +267,9 @@ a{
     text-align: center;
 }
 
-.texto-destacado1{
-    font-family: 'Nunito Sans';
-    font-weight: 900;
-    font-size: 3rem;
-}
+/* === FIN PAGINA INDEX === */
 
-.main-fondoblanco{
-    box-shadow: inset 0px 0px 50px 12px rgba(0, 0, 0, 0.25);
-}
-
-.main__titulo{
-    display: flex;
-    justify-content: center;
-    padding: 50px 20px;
-    max-width: 540px;
-    margin: 0 auto;
-}
-
-h2{
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 2rem;
-    text-align: center;
-    color: #0D0B0E;
-}
-
-/* =============== pagina actividades =============== */
+/* === PAGINA ACTIVIDADES === */
 
 .actividades{
     display: grid;
@@ -264,7 +281,7 @@ h2{
     margin: 0 auto;
 }
 
-.navbar-expand-lg {
+.navbar-expand-lg{
     justify-content: space-between;
 }
 
@@ -309,7 +326,9 @@ h2{
     color: #0D0B0E;
 }
 
-/* =============== pagina sucursales =============== */
+/* === FIN PAGINA ACTIVIDADES === */
+
+/* === PAGINA SUCURSALES === */
 
 .sucursales{
     display: grid;
@@ -336,14 +355,6 @@ h2{
     font-size: 1.188rem;
     padding: 15px 15px;
 }
-
-/* .alineacion-suc5{
-    grid-column: 2/3;
-}
-
-.alineacion-suc6{
-    grid-column: 3/4;
-} */
 
 .svg-ubicacion{
     width: 13px;
@@ -389,7 +400,9 @@ h2{
     flex-direction: column;
 }
 
-/* =============== pagina reserva =============== */
+/* === FIN PAGINA SUCURSALES === */
+
+/* === PAGINA RESERVA === */
 
 .reserva{
     display: flex;
@@ -450,7 +463,9 @@ input[type="number"]::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
 
-/* =============== pagina reserva =============== */
+/* === FIN PAGINA RESERVA === */
+
+/* === PAGINA NOVEDADES === */
 
 .novedades{
     display: flex;
@@ -490,7 +505,9 @@ input[type="number"]::-webkit-inner-spin-button{
     line-height: 30px;
 }
 
-/* ========== MEDIAQUERIS ========== */
+/* === FIN PAGINA NOVEDADES === */
+
+/* === MEDIAQUERIS === */
 
 @media (min-width: 480px){
 
