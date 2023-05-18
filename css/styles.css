@@ -457,6 +457,7 @@ a{
     border: none;
     border-bottom: 1px solid;
     background-color: transparent;
+    color: #0D0B0E;
 }
 
 .reserva__contenedor-boton{
@@ -469,6 +470,7 @@ a{
     font-size: 1.25rem;
     border-radius: 24px;
     background-color: #FDF346;
+    color: #0D0B0E;
     padding: 2px 50px;
     border: 2px solid #0D0B0E;
 
