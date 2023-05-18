@@ -486,19 +486,26 @@ input[type="number"]::-webkit-inner-spin-button{
 .novedades{
     display: flex;
     flex-direction: column;
-    max-width: 1140px;
+    max-width: 440px;
     margin: 0 auto;
+    padding: 0 20px 50px;
+    gap: 20px;
 }
 
 .novedad__contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
 }
 
 .novedad__contenedor-img{
-    height: 500px;
+    display: flex;
+    align-items: center;
+    max-height: 420px;
+    width: auto;
+    overflow: hidden;
 }
 
 .novedad__imagen{
@@ -519,6 +526,7 @@ input[type="number"]::-webkit-inner-spin-button{
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 30px;
+    margin: 0px;
 }
 
 /* === FIN PAGINA NOVEDADES === */
@@ -648,6 +656,10 @@ input[type="number"]::-webkit-inner-spin-button{
         border-radius: 50px;
         padding: 20px 0px;
     }
+
+    .novedades{
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 992px){
@@ -668,6 +680,11 @@ input[type="number"]::-webkit-inner-spin-button{
         grid-template-columns: repeat(3, 1fr);
         max-width: 960px;
     }
+
+    .novedades{
+        max-width: 960px;
+    }
+
 }
 
 @media (min-width: 1200px){
@@ -683,57 +700,32 @@ input[type="number"]::-webkit-inner-spin-button{
     .sucursales{
         max-width: 1140px;
     }
+
+    .novedades{
+        max-width: 1140px;
+    }
+
+    .novedad__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .novedad__contenedor-img{
+        grid-column: 1/2;
+    }
+
+    .novedad__contenedor-texto{
+        grid-column: 2/3;
+    }
+
+    .novedades article:nth-of-type(even) .novedad__contenedor-texto{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .novedades article:nth-of-type(even) .novedad__contenedor-img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
-
-
-/* 
-.reserva{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.reserva__contenedor{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    justify-items: center;
-    gap: 20px;
-}
-
-.reserva__label{
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-align: right;
-    width: 50%;
-    margin-top: 8px;
-}
-
-.reserva__contenedor-selector{ 
-    margin-block-start: 10px;
-    width: 50%;
-
-}
-
-.reserva__input-selector{
-    box-sizing: border-box;
-    align-self: flex-start;
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    font-weight: 500;
-    width: 60%;
-}
-
-.reserva__contenedor-boton{
-    padding: 20px 0px 50px;
-}
-
-.reserva__boton{
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 1.25rem;
-    border-radius: 24px;
-    background-color: #D9D9D9;
-    padding: 2px 60px
-} */
