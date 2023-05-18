@@ -30,15 +30,18 @@ a{
     text-decoration-line: none;
 }
 
-/* header{
-    background-color: #0D0B0E;
-    flex-wrap: wrap;
-} */
+.oculto{
+    display: none;
+}
 
-.header__bigbull{
+/* .header__bigbull{
     width: 192px;
     height: 74px;
     padding: 5px 10px 5px 30px;
+} */
+
+.header-logo{
+    min-width: 129px;
 }
 
 .bg-negro{
@@ -67,7 +70,6 @@ a{
     gap: 33px;
     padding: 10px 15px;
     margin-bottom: 0px;
-    flex-wrap: wrap;
     align-items: baseline;
 }
 
@@ -84,9 +86,99 @@ a{
     text-decoration-line: underline;
 }
 
-h1{
-    display: none
+/* ============ INICIO DE FOOTER ============*/
+
+.footer{
+    background-color: #0D0B0E;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/bigbull-logo.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 540px;
+} 
+
+.footer__section1{
+    display: flex;
+    flex-direction: column;
 }
+
+.titulo-footer{
+    font-family: 'Nunito sans';
+    font-weight: 900;
+    font-size: 1.375rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+.footer__ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px ;
+    color: #FDF346;
+    gap: 10px;
+}
+
+.footer__li{
+    text-decoration-line: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.188rem;
+/* Si ponia el color aqui, no pasaba nada, lo tuve que poner en el padre. */
+}
+
+.footer__contenedor-svg{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+.footer__rrss-titulo{
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 1.188rem;
+    color: #FFFFFF;
+}
+
+.svg-fb{
+    width: 42.51px; 
+    height: 42.51px;
+    fill: #FDF346
+}
+
+.svg-ig{
+    width: 39.24px; 
+    height: 39.24px;
+    fill: #FDF346
+}
+
+.svg-tw{
+    width: 43.32px; 
+    height: 35.15px;
+    fill: #FDF346
+}
+
+.svg-yt{
+    width: 55px; 
+    height: 38px;
+    fill: #FDF346
+}
+
+.svg-tt{
+    width: 35.15px; 
+    height: 40.05px;
+    fill: #FDF346
+}
+
+/* ============ FIN DE FOOTER ============*/
 
 /* ========== Inicio ========== */
 
@@ -96,7 +188,6 @@ h1{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-posicion.jpg);
-    /* background-repeat: no-repeat; */ 
     background-size: cover;
     background-position: right;
 }
@@ -107,7 +198,6 @@ h1{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-profesor.png);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -129,7 +219,6 @@ h1{
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-clean.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -145,74 +234,10 @@ h1{
     text-align: center;
 }
 
-.texto-destacado{
+.texto-destacado1{
     font-family: 'Nunito Sans';
     font-weight: 900;
     font-size: 3rem;
-}
-
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0D0B0E;
-    flex-wrap: wrap;
-}
-
-.footer-section1{
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.ul-footer{
-    display: flex;
-/* Acá no entiendo por que el color para que en el ".li-footer" (esta dos mas abajo) se cambie al amarillo lo tuve que poner aqui en el padre, cuando en la barra de navegacion del Header lo puse directamente en el ".li-header */
-
-    color: #FDF346;
-    list-style: none;
-    gap: 55px;
-    flex-wrap: wrap;
-}
-
-.svg-fb{
-    width: 43px; 
-    height: 43px;
-    fill: #FDF346
-}
-
-.main1-h3{
-    font-family: 'Nunito sans', sans-serif;
-    font-weight: 900;
-    font-size: 1.375rem;
-    color: #FFFFFF;
-}
-
-.li-footer{
-    text-decoration-line: none;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 800;
-    font-size: 1.188rem;
-
-/* Si ponia el color aqui, no pasaba nada, lo tuve que poner en el padre. */
-}
-
-.main1-h4{
-    font-family: 'Nunito Sans';
-    font-weight: 700;
-    font-size: 1.188rem;
-    color: #FFFFFF;
-    padding: 0px 20px;
-}
-
-.footer__logo{
-    width: 115px;
-    height: 115px;
-    border-radius: 50px;
-    margin: 10px 20px;
 }
 
 .main-fondoblanco{
@@ -438,6 +463,8 @@ input[type="number"]::-webkit-inner-spin-button{
 .novedades{
     display: flex;
     flex-direction: column;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .novedad__contenedor{
@@ -471,9 +498,39 @@ input[type="number"]::-webkit-inner-spin-button{
     line-height: 30px;
 }
 
-/* mediaqueris */
+/* ========== MEDIAQUERIS ========== */
 
 @media (min-width: 480px){
+    .footer{
+        background-image: none;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-content: center;
+        column-gap: 30px;
+    }
+
+    .footer__section1{
+        grid-row: 1/3;
+    }
+
+    .br1{
+        display: block;
+    }
+
+    .footer__logo{
+        display: block;
+        width: 145px;
+        height: 145px;
+        border-radius: 50px;
+    }
+
+    .footer__rrss-titulo{
+        display: block;
+        text-align: center;
+        padding: 30px 0px 0px;
+    }
 
     .main__titulo{
         padding: 50px 40px;
@@ -497,6 +554,39 @@ input[type="number"]::-webkit-inner-spin-button{
 }
 
 @media (min-width: 768px){
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 720px;
+    }
+
+    .titulo-footer{
+        padding: 0px;
+    }
+
+    
+    .texto-destacado2{
+        font-size: 2rem;
+    }
+
+    .footer__ul{
+        display: none;
+    }
+
+    .footer__rrss-titulo{
+        padding: 0px;
+    }
+
+    .footer__contenedor-svg{
+        padding: 0px;
+    }
+
+    .footer__logo{
+        width: 115px;
+        height: 115px;
+    }
 
     .main__titulo{
         max-width: 720px;
@@ -531,6 +621,10 @@ input[type="number"]::-webkit-inner-spin-button{
 
 @media (min-width: 992px){
 
+    .footer{
+        max-width: 960px;
+    }
+
     .main__titulo{
         max-width: 960px;
     }
@@ -546,6 +640,10 @@ input[type="number"]::-webkit-inner-spin-button{
 }
 
 @media (min-width: 1200px){
+
+    .footer{
+        max-width: 1140px;
+    }
 
     .main__titulo{
         max-width: 1140px;
