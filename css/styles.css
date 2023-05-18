@@ -167,6 +167,10 @@ a{
 /* Si ponia el color aqui, no pasaba nada, lo tuve que poner en el padre. */
 }
 
+.footer__li:visited {
+    color: #FDF346; /* Cambia el color de los enlaces visitados */
+  }
+
 .footer__contenedor-svg{
     display: flex;
     align-items: center;
@@ -240,10 +244,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/yoga.jpg), url(../img/foto-musculacion.jpg);
-    background-size: 50% auto, 50% auto;
-    background-repeat: no-repeat, no-repeat;
-    background-position: left, right;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/foto-musculacion.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .main1__div4{
