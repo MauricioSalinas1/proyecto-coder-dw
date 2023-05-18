@@ -15,7 +15,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-negro padding-0">
-        <div class="container align-items-end">
+        <div class="container align-items-lg-end">
             <div class="w-25">
                 <a href="../index.html">
                     <img src="../img/bigbull.png" alt="BigBull Fitness Center" class="w-100 header-logo">
@@ -54,93 +54,94 @@
     <div class="contenedor-titulo-pag">
         <h2 class="titulo-pag">¡No te quedes afuera! Reserva acá para tener tu cupo en la actividad que deseas realizar</h2>
     </div>
+    <section class="main4__section1">
+        <form class="reserva">
 
-    <form class="reserva">
-
-        <div class="reserva__contenedor">
-            <label for="numero-usuario" class="reserva__label">Número de cuenta:</label>
-            <div class="reserva__contenedor-selector">
-                <input type="number" placeholder="Ej: 123456" maxlength="6" class="reserva__input-selector">
+            <div class="reserva__contenedor">
+                <label for="numero-usuario" class="reserva__label">Número de cuenta:</label>
+                <div class="reserva__contenedor-selector">
+                    <input type="number" placeholder="Ej: 123456" maxlength="6" class="reserva__input-selector">
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="nombre-usuario" class="reserva__label">Nombre y apellido:</label>
-            <div class="reserva__contenedor-selector">
-                <input type="text" id="nombre-usuario" placeholder="Ej: Juan Gómez" class="reserva__input-selector">
+            <div class="reserva__contenedor">
+                <label for="nombre-usuario" class="reserva__label">Nombre y apellido:</label>
+                <div class="reserva__contenedor-selector">
+                    <input type="text" id="nombre-usuario" placeholder="Ej: Juan Gómez" class="reserva__input-selector">
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="dni-usuario" class="reserva__label">DNI:</label>
-            <div class="reserva__contenedor-selector">
-                <input type="number" placeholder="Ej: 12345678" class="reserva__input-selector">
+            <div class="reserva__contenedor">
+                <label for="dni-usuario" class="reserva__label">DNI:</label>
+                <div class="reserva__contenedor-selector">
+                    <input type="number" placeholder="Ej: 12345678" class="reserva__input-selector">
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="nombre-sucursal" class="reserva__label">Sucursal:</label>
-            <div class="reserva__contenedor-selector">
-                <select name="sucursal" id="nombre-sucursal" class="reserva__input-selector">
-                    <option value="" selected disabled>Seleccioná una sucursal</option>
-                    <option value="sucursal-1">Sucursal Nueva Cordoba</option>
-                    <option value="sucursal-2">Sucursal Centro</option>
-                    <option value="sucursal-3">Sucursal Cerro</option>
-                    <option value="sucursal-4">Sucursal Alto Alberdi</option>
-                    <option value="sucursal-5">Sucursal Güemes</option>
-                    <option value="sucursal-6">Sucursal Cofico</option>
-                </select>
+            <div class="reserva__contenedor">
+                <label for="nombre-sucursal" class="reserva__label">Sucursal:</label>
+                <div class="reserva__contenedor-selector">
+                    <select name="sucursal" id="nombre-sucursal" class="reserva__input-selector">
+                        <option value="" selected disabled>Seleccioná una sucursal</option>
+                        <option value="sucursal-1">Sucursal Nueva Cordoba</option>
+                        <option value="sucursal-2">Sucursal Centro</option>
+                        <option value="sucursal-3">Sucursal Cerro</option>
+                        <option value="sucursal-4">Sucursal Alto Alberdi</option>
+                        <option value="sucursal-5">Sucursal Güemes</option>
+                        <option value="sucursal-6">Sucursal Cofico</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="tipo-actividad" class="reserva__label">Actividad:</label>
-            <div class="reserva__contenedor-selector">
-                <select name="actividades" id="tipo-actividad" class="reserva__input-selector">
-                    <option value=""selected disabled>Seleccioná una actividad</option>
-                    <option value="actividad-yoga">Yoga</option>
-                    <option value="actividad-pilates">Pilates</option>
-                    <option value="actividad-natacion">Natación</option>
-                    <option value="actividad-zumba">Zumba</option>
-                    <option value="actividad-spinning">Spinning</option>
-                    <option value="actividad-funcional">Funcional</option>
-                    <option value="actividad-boxeo">Boxeo</option>
-                    <option value="actividad-crossfit">Crossfit</option>
-                </select>
+            <div class="reserva__contenedor">
+                <label for="tipo-actividad" class="reserva__label">Actividad:</label>
+                <div class="reserva__contenedor-selector">
+                    <select name="actividades" id="tipo-actividad" class="reserva__input-selector">
+                        <option value=""selected disabled>Seleccioná una actividad</option>
+                        <option value="actividad-yoga">Yoga</option>
+                        <option value="actividad-pilates">Pilates</option>
+                        <option value="actividad-natacion">Natación</option>
+                        <option value="actividad-zumba">Zumba</option>
+                        <option value="actividad-spinning">Spinning</option>
+                        <option value="actividad-funcional">Funcional</option>
+                        <option value="actividad-boxeo">Boxeo</option>
+                        <option value="actividad-crossfit">Crossfit</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="fecha" class="reserva__label">Fecha:</label>
-            <div class="reserva__contenedor-selector">
-                <input type="date" class="reserva__input-selector">
+            <div class="reserva__contenedor">
+                <label for="fecha" class="reserva__label">Fecha:</label>
+                <div class="reserva__contenedor-selector">
+                    <input type="date" class="reserva__input-selector">
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor">
-            <label for="horario" class="reserva__label">Horario:</label>
-            <div class="reserva__contenedor-selector">
-                <select name="horarios" id="horario" class="reserva__input-selector">
-                    <option value=""selected disabled>Seleccioná un horario</option>
-                    <option value="horario-1">8:00</option>
-                    <option value="horario-2">9:00</option>
-                    <option value="horario-3">10:00</option>
-                    <option value="horario-4">11:00</option>
-                    <option value="horario-5">12:00</option>
-                    <option value="horario-1">13:00</option>
-                    <option value="horario-2">14:00</option>
-                    <option value="horario-3">15:00</option>
-                    <option value="horario-4">16:00</option>
-                    <option value="horario-5">17:00</option>
-                </select>
+            <div class="reserva__contenedor">
+                <label for="horario" class="reserva__label">Horario:</label>
+                <div class="reserva__contenedor-selector">
+                    <select name="horarios" id="horario" class="reserva__input-selector">
+                        <option value=""selected disabled>Seleccioná un horario</option>
+                        <option value="horario-1">8:00</option>
+                        <option value="horario-2">9:00</option>
+                        <option value="horario-3">10:00</option>
+                        <option value="horario-4">11:00</option>
+                        <option value="horario-5">12:00</option>
+                        <option value="horario-1">13:00</option>
+                        <option value="horario-2">14:00</option>
+                        <option value="horario-3">15:00</option>
+                        <option value="horario-4">16:00</option>
+                        <option value="horario-5">17:00</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="reserva__contenedor-boton">
-            <button type="submit" class="reserva__boton">Reservá</button>
-        </div>
+            <div class="reserva__contenedor-boton">
+                <button type="submit" class="reserva__boton">Reservá</button>
+            </div>
 
-    </form>
+        </form>
+    </section>
 </main>
 
 <footer class="bg-negro">
