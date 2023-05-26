@@ -1,0 +1,39 @@
+.main1{
+    &__div {
+        height: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        overflow-wrap: break-word;
+
+        &-1 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-posicion.jpg);
+            background-position: right;
+        }
+
+        &-2 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-profesor.png);
+        }
+
+        &-3 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-musculacion.jpg);
+        }
+
+        &-4 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-clean.jpg);
+        }
+    }
+
+    &__p {
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 2.25rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 15px;
+        overflow: hidden;
+        text-align: center;
+    }
+}

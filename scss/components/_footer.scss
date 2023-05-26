@@ -1,0 +1,119 @@
+.footer {
+    background-color: $color-negro;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/bigbull-logo.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 540px;
+
+    &__section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__titulo {
+        font-family: 'Nunito sans';
+        font-weight: 900;
+        font-size: 1.375rem;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px ;
+        color: $color-amarillo;
+        gap: 10px;
+    }
+
+    &__li {
+        text-decoration-line: none;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+        font-size: 1.188rem;
+        /* Si ponia el color aqui, no pasaba nada, lo tuve que poner en el padre. */
+
+        &:visited  {
+            color: $color-amarillo;
+        }
+
+        &:link  {
+            color: $color-amarillo;
+        }
+    }
+
+    &__contenedor-svg {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0px;
+    }
+
+    &__rrss-titulo {
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 1.188rem;
+        color: #FFFFFF;
+    }
+} 
+
+.svg{
+    &-fb {
+        width: 42.51px; 
+        height: 42.51px;
+        fill: $color-amarillo;
+
+        &:hover{
+            fill: $color-naranja;
+        }
+    }
+
+    &-ig {
+        width: 39.24px; 
+        height: 39.24px;
+        fill: $color-amarillo;
+
+        &:hover{
+            fill: $color-naranja;
+        }
+    }
+
+    &-tw {
+        width: 43.32px; 
+        height: 35.15px;
+        fill: $color-amarillo;
+
+        &:hover{
+            fill: $color-naranja;
+        }
+    }
+
+    &-yt {
+        width: 55px; 
+        height: 38px;
+        fill: $color-amarillo;
+
+        &:hover{
+            fill: $color-naranja;
+        }
+    }
+
+    &-tt {
+        width: 35.15px; 
+        height: 40.05px;
+        fill: $color-amarillo;
+
+        &:hover{
+            fill: $color-naranja;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+@import "./base";
+
+@import "./components/header";
+@import "./components/footer";
+
+@import "./pages/index";
+@import "./pages/actividades";
+@import "./pages/sucursales";
+@import "./pages/reserva";
+@import "./pages/novedades";
+
+@media (min-width: 480px) {
+
+    .footer {
+        background-image: none;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-content: center;
+        column-gap: 30px;
+    }
+
+    .footer__section1 {
+        grid-row: 1/3;
+    }
+
+    .br1 {
+        display: block;
+    }
+
+    .footer__rrss-titulo {
+        display: block;
+        text-align: center;
+        padding: 30px 0px 0px;
+    }
+
+    .footer__logo {
+        display: block;
+        width: 145px;
+        height: 145px;
+        border-radius: 50px;
+    }
+
+    .main__titulo {
+        padding: 50px 40px;
+    }    
+
+    .actividades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actividades__descripciones {
+        padding: 5px 10px;
+
+    }
+}
+
+@media (min-width: 640px) {
+
+    .sucursales__contenedores {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 720px;
+    }
+
+    .footer__titulo {
+        padding: 0px;
+    }
+
+    
+    .texto-destacado2 {
+        font-size: 2rem;
+    }
+
+    .footer__ul {
+        display: none;
+    }
+
+    .footer__rrss-titulo {
+        padding: 0px;
+    }
+
+    .footer__contenedor-svg {
+        padding: 0px;
+    }
+
+    .footer__logo {
+        width: 115px;
+        height: 115px;
+    }
+
+    .contenedor-titulo-pag {
+        max-width: 720px;
+    }
+
+    .actividades {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 720px;
+    }
+
+    .actividades__contenedores {
+        grid-column: span 2;
+    }
+
+    .actividades__descripciones {
+        max-width: 400px;
+    }
+
+    .alineacion-act7 {
+        grid-column: 2/4;
+    }
+    
+    .alineacion-act8 {
+        grid-column: 4/6;
+    }
+
+    .sucursales {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 720px;
+    }
+
+    .reserva {
+        border-radius: 50px;
+        padding: 20px 0px;
+    }
+
+    .novedades {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .footer {
+        max-width: 960px;
+    }
+
+    .contenedor-titulo-pag {
+        max-width: 960px;
+    }
+
+    .actividades {
+        max-width: 960px;
+    }
+
+    .sucursales {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 960px;
+    }
+
+    .novedades {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .footer {
+        max-width: 1140px;
+    }
+
+    .actividades {
+        max-width: 1140px;
+    }
+
+    .sucursales {
+        max-width: 1140px;
+    }
+
+    .novedades {
+        max-width: 1140px;
+    }
+
+    .novedades__contenedores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .novedades__contenedores-img {
+        grid-column: 1/2;
+    }
+
+    .novedades__contenedores-textos {
+        grid-column: 2/3;
+    }
+
+    .novedades article:nth-of-type(even) .novedades__contenedores-textos {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .novedades article:nth-of-type(even) .novedades__contenedores-img {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}  

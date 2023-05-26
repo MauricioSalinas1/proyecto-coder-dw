@@ -1,0 +1,69 @@
+.sucursales {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    justify-items: center;
+    padding: 0px 20px 50px;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 540px;
+
+    &__contenedores {
+        background-color: $color-gris;
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        max-width: 450px;
+    }
+
+    &__nombres {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 1.188rem;
+        padding: 15px 15px;
+    }
+
+    &__ul {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 1.063rem;
+        line-height: 30px;
+        padding: 20px 15px;
+        padding-left: 15px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.svg-ubicacion {
+    width: 13px;
+    height: 17px;
+    fill: $color-negro;
+    margin-left: 2px;
+    margin-right: 8px;
+    vertical-align: -0.125em
+}
+
+.svg-wsp {
+    width: 18px;
+    height: 18px;
+    fill: $color-negro;
+    margin-right: 5px;
+    vertical-align: -0.125em;
+}
+
+.svg-calendario {
+    width: 17px;
+    height: 19px;
+    fill: $color-negro;
+    margin-right: 6px;
+    vertical-align: -0.125em;
+}
+
+.svg-mail {
+    width: 18px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: -0.125em;
+}

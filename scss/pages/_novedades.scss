@@ -1,0 +1,43 @@
+.novedades {
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+    gap: 20px;
+
+    &__contenedores {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-img {
+            display: flex;
+            align-items: center;
+            max-height: 420px;
+            width: auto;
+            overflow: hidden;
+        }
+    }
+
+    &__imagenes {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__titulos {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 1.563rem;
+    }
+
+    &__textos {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 30px;
+        margin: 0px;
+    }
+}

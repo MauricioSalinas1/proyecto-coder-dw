@@ -1,0 +1,37 @@
+.navbar-nav {
+    color: #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1rem;
+    --bs-nav-link-hover-color: #FFFFFF;
+}
+
+.nav-link[aria-current="page"] {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.header-logo {
+    min-width: 170px;
+    padding: 2px 0px;
+}
+
+.menu {
+    &__ul {
+        display: flex;
+        gap: 33px;
+        padding: 10px 15px;
+        margin-bottom: 0px;
+        align-items: baseline;
+    }
+
+    &__li {
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 1rem;
+        color: #FFFFFF;
+    
+    }
+}
