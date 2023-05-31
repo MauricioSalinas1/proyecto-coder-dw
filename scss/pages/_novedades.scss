@@ -1,5 +1,5 @@
 .novedades {
-    display: flex;
+    @include flexbox;
     flex-direction: column;
     max-width: 440px;
     margin: 0 auto;
@@ -7,13 +7,12 @@
     gap: 20px;
 
     &__contenedores {
-        display: flex;
+        @include flexbox;
         flex-direction: column;
         gap: 20px;
 
         &-img {
-            display: flex;
-            align-items: center;
+            @include flexbox;
             max-height: 420px;
             width: auto;
             overflow: hidden;

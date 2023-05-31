@@ -1,30 +1,34 @@
 .main1{
     &__div {
-        height: 720px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: center;
-        overflow-wrap: break-word;
 
         &-1 {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-posicion.jpg);
-            background-position: right;
+        height: 720px;
+        background-size: cover;
+        background-position: right;
+        overflow-wrap: break-word;
+        @include flexbox;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-posicion.jpg);
         }
 
         &-2 {
+            @extend .main1__div-1;
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-profesor.png);
+            background-position: center;
         }
 
         &-3 {
+            @extend .main1__div-1;
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-musculacion.jpg);
+            background-position: center;
         }
 
         &-4 {
+            @extend .main1__div-1;
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-clean.jpg);
+            background-position: center;
         }
     }
+    
 
     &__p {
         font-family: 'Nunito Sans';

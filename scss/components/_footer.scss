@@ -4,17 +4,10 @@
     background-size: cover;
     background-position: center;
     padding: 20px 20px;
-    display: flex;
+    @include flexbox;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
     max-width: 540px;
-
-    &__section1 {
-        display: flex;
-        flex-direction: column;
-    }
 
     &__titulo {
         font-family: 'Nunito sans';
@@ -26,10 +19,8 @@
     }
 
     &__ul {
-        display: flex;
+        @include flexbox;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 10px ;
         color: $color-amarillo;
         gap: 10px;
@@ -40,7 +31,6 @@
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 800;
         font-size: 1.188rem;
-        /* Si ponia el color aqui, no pasaba nada, lo tuve que poner en el padre. */
 
         &:visited  {
             color: $color-amarillo;
@@ -52,8 +42,7 @@
     }
 
     &__contenedor-svg {
-        display: flex;
-        align-items: center;
+        @include flexbox;
         gap: 5px;
         padding: 10px 0px;
     }

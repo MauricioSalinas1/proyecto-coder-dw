@@ -19,11 +19,10 @@
 
 .menu {
     &__ul {
-        display: flex;
+        @include flexbox(center, baseline);
         gap: 33px;
         padding: 10px 15px;
         margin-bottom: 0px;
-        align-items: baseline;
     }
 
     &__li {
