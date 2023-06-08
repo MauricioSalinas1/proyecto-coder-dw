@@ -5,6 +5,9 @@
     font-weight: 900;
     font-size: 1rem;
     --bs-nav-link-hover-color: #FFFFFF;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-delay: 2s;
 }
 
 .nav-link[aria-current="page"] {
@@ -17,20 +20,8 @@
     padding: 2px 0px;
 }
 
-.menu {
-    &__ul {
-        @include flexbox(center, baseline);
-        gap: 33px;
-        padding: 10px 15px;
-        margin-bottom: 0px;
-    }
-
-    &__li {
-        font-family: 'Nunito Sans', sans-serif;
-        font-style: italic;
-        font-weight: 900;
-        font-size: 1rem;
-        color: #FFFFFF;
-    
+.nav-item {
+    &:hover{
+        text-decoration: underline;
     }
 }

@@ -7,7 +7,7 @@
     gap: 20px;
 
     &__contenedores {
-        @include flexbox;
+        @include flexbox(center, top);
         flex-direction: column;
         gap: 20px;
 

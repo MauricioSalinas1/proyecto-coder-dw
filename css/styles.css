@@ -86,6 +86,9 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 900;
   font-size: 1rem;
   --bs-nav-link-hover-color: #FFFFFF;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-delay: 2s;
 }
 
 .nav-link[aria-current=page] {
@@ -98,20 +101,8 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 2px 0px;
 }
 
-.menu__ul {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 33px;
-  padding: 10px 15px;
-  margin-bottom: 0px;
-}
-.menu__li {
-  font-family: "Nunito Sans", sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 1rem;
-  color: #FFFFFF;
+.nav-item:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -174,6 +165,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 42.51px;
   height: 42.51px;
   fill: #FDF346;
+  transition-duration: 0.2s;
 }
 .svg-fb:hover {
   fill: #DBD406;
@@ -182,6 +174,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 39.24px;
   height: 39.24px;
   fill: #FDF346;
+  transition-duration: 0.2s;
 }
 .svg-ig:hover {
   fill: #DBD406;
@@ -190,6 +183,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 43.32px;
   height: 35.15px;
   fill: #FDF346;
+  transition-duration: 0.2s;
 }
 .svg-tw:hover {
   fill: #DBD406;
@@ -198,6 +192,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 55px;
   height: 38px;
   fill: #FDF346;
+  transition-duration: 0.2s;
 }
 .svg-yt:hover {
   fill: #DBD406;
@@ -206,6 +201,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 35.15px;
   height: 40.05px;
   fill: #FDF346;
+  transition-duration: 0.2s;
 }
 .svg-tt:hover {
   fill: #DBD406;
@@ -246,7 +242,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 .actividades {
   display: grid;
-  align-content: top;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
   padding: 0px 20px 50px;
@@ -259,12 +254,16 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
   flex-direction: column;
   padding: 0px 0px 30px;
+  align-self: self-start;
 }
 .actividades__contenedores-imagenes {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   overflow: hidden;
+  transition-duration: 0.2s;
+}
+.actividades__contenedores-imagenes:hover {
   box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
 }
 .actividades__imagenes {
@@ -307,6 +306,10 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   border-radius: 20px;
   max-width: 450px;
+  transition-duration: 0.2s;
+}
+.sucursales__contenedores:hover {
+  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
 }
 .sucursales__nombres {
   font-family: "Montserrat";
@@ -411,6 +414,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #0D0B0E;
   padding: 2px 50px;
   border: 2px solid #0D0B0E;
+  transition-duration: 0.2s;
 }
 .reserva__boton:hover {
   background-color: #DBD406;
@@ -429,7 +433,7 @@ input[type=number]::-webkit-inner-spin-button {
 .novedades__contenedores {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   flex-direction: column;
   gap: 20px;
 }

@@ -55,6 +55,7 @@
         color: $color-negro;
         padding: 2px 50px;
         border: 2px solid $color-negro;
+        transition-duration: 0.2s;
 
         &:hover {
             background-color: $color-naranja;

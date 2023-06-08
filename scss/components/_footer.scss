@@ -60,6 +60,7 @@
         width: 42.51px; 
         height: 42.51px;
         fill: $color-amarillo;
+        transition-duration: 0.2s;
 
         &:hover{
             fill: $color-naranja;
@@ -70,6 +71,7 @@
         width: 39.24px; 
         height: 39.24px;
         fill: $color-amarillo;
+        transition-duration: 0.2s;
 
         &:hover{
             fill: $color-naranja;
@@ -80,6 +82,7 @@
         width: 43.32px; 
         height: 35.15px;
         fill: $color-amarillo;
+        transition-duration: 0.2s;
 
         &:hover{
             fill: $color-naranja;
@@ -90,6 +93,7 @@
         width: 55px; 
         height: 38px;
         fill: $color-amarillo;
+        transition-duration: 0.2s;
 
         &:hover{
             fill: $color-naranja;
@@ -100,6 +104,7 @@
         width: 35.15px; 
         height: 40.05px;
         fill: $color-amarillo;
+        transition-duration: 0.2s;
 
         &:hover{
             fill: $color-naranja;
