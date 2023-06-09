@@ -7,24 +7,24 @@
         background-position: right;
         overflow-wrap: break-word;
         @include flexbox;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-posicion.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-1.jpg);
         }
 
         &-2 {
             @extend .main1__div-1;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-profesor.png);
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-2.jpg);
             background-position: center;
         }
 
         &-3 {
             @extend .main1__div-1;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-musculacion.jpg);
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-3.jpg);
             background-position: center;
         }
 
         &-4 {
             @extend .main1__div-1;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-clean.jpg);
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-4.jpg);
             background-position: center;
         }
     }
