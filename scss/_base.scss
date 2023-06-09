@@ -2,6 +2,7 @@ $color-amarillo: #FDF346;
 $color-negro: #0D0B0E;
 $color-gris: #D9D9D9;
 $color-naranja: #DBD406;
+$color-blanco: #FFFFFF;
 
 @mixin flexbox($justify:center , $align:center) {
     display: flex;

@@ -1,8 +1,11 @@
-.footer {
+.bg-logo {
     background-color: $color-negro;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/bigbull-logo.png);
     background-size: cover;
     background-position: center;
+}
+
+.footer {
     padding: 20px 20px;
     @include flexbox;
     flex-direction: column;
@@ -13,7 +16,7 @@
         font-family: 'Nunito sans';
         font-weight: 900;
         font-size: 1.375rem;
-        color: #FFFFFF;
+        color: $color-blanco;
         text-align: center;
         padding: 10px 0px 0px 0px;
     }
@@ -51,7 +54,7 @@
         font-family: 'Nunito Sans';
         font-weight: 700;
         font-size: 1.188rem;
-        color: #FFFFFF;
+        color: $color-blanco;
     }
 } 
 
@@ -112,10 +115,33 @@
     }
 }
 
+.hr-footer {
+    margin: 0px auto;
+    padding: 0px 20px;
+    border-width: 2px;
+    max-width: 440px;
+}
+
+.derechos {
+    &-contenedor {
+        padding: 10px 20px;
+    }
+
+    &-parrafo {
+        color: $color-blanco;
+        font-family: 'Nunito Sans';
+        text-align: center;
+        margin: 0px;
+    }
+}
+
 @media (min-width: 480px) {
 
-    .footer {
+    .bg-logo {
         background-image: none;
+    }
+
+    .footer {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
@@ -144,6 +170,7 @@
         height: 145px;
         border-radius: 50px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -180,6 +207,11 @@
         width: 115px;
         height: 115px;
     }
+
+    .hr-footer {
+        max-width: 728px;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -187,11 +219,19 @@
     .footer {
         max-width: 960px;
     }
+
+    .hr-footer {
+        max-width: 960px;
+    }
 }
 
 @media (min-width: 1200px) {
 
     .footer {
+        max-width: 1140px;
+    }
+
+    .hr-footer {
         max-width: 1140px;
     }
 }
