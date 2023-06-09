@@ -19,8 +19,6 @@
     padding: 2px 0px;
 }
 
-.nav-item {
-    &:hover{
-        text-decoration: underline;
-    }
+.nav-item:hover{
+    text-decoration: underline;
 }

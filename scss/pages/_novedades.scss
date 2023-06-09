@@ -57,29 +57,16 @@
 
     .novedades {
         max-width: 1140px;
-    }
 
-    .novedades__contenedores {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-    }
+        &__contenedores {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
 
-    .novedades__contenedores-img {
-        grid-column: 1/2;
-    }
-
-    .novedades__contenedores-textos {
-        grid-column: 2/3;
-    }
-
-    .novedades article:nth-of-type(even) .novedades__contenedores-textos {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .novedades article:nth-of-type(even) .novedades__contenedores-img {
-        grid-column: 2/3;
-        grid-row: 1/2;
+        article:nth-of-type(even) .novedades__contenedores-img {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
     }
 }

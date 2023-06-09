@@ -38,37 +38,40 @@
     }
 }
 
-.svg-ubicacion {
-    width: 13px;
-    height: 17px;
-    fill: $color-negro;
-    margin-left: 2px;
-    margin-right: 8px;
-    vertical-align: -0.125em
-}
 
-.svg-wsp {
-    width: 18px;
-    height: 18px;
-    fill: $color-negro;
-    margin-right: 5px;
-    vertical-align: -0.125em;
-}
+.svg {
+    &-ubicacion {
+        width: 13px;
+        height: 17px;
+        fill: $color-negro;
+        margin-left: 2px;
+        margin-right: 8px;
+        vertical-align: -0.125em
+    }
 
-.svg-calendario {
-    width: 17px;
-    height: 19px;
-    fill: $color-negro;
-    margin-right: 6px;
-    vertical-align: -0.125em;
-}
+    &-wsp {
+        width: 18px;
+        height: 18px;
+        fill: $color-negro;
+        margin-right: 5px;
+        vertical-align: -0.125em;
+    }
 
-.svg-mail {
-    width: 18px;
-    height: 14px;
-    fill: $color-negro;
-    margin-right: 5px;
-    vertical-align: -0.125em;
+    &-calendario {
+        width: 17px;
+        height: 19px;
+        fill: $color-negro;
+        margin-right: 6px;
+        vertical-align: -0.125em;
+    }
+
+    &-mail {
+        width: 18px;
+        height: 14px;
+        fill: $color-negro;
+        margin-right: 5px;
+        vertical-align: -0.125em;
+    }
 }
 
 @media (min-width: 640px) {

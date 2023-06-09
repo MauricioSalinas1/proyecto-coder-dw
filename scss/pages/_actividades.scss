@@ -54,11 +54,10 @@
 
     .actividades {
         grid-template-columns: repeat(2, 1fr);
-    }
 
-    .actividades__descripciones {
-        padding: 5px 10px;
-
+        &__descripciones {
+            padding: 5px 10px;
+        }
     }
 }
 
@@ -67,22 +66,25 @@
     .actividades {
         grid-template-columns: repeat(6, 1fr);
         max-width: 720px;
+
+        &__contenedores {
+            grid-column: span 2;
+        }
+
+        &__descripciones {
+            max-width: 400px;
+        }
     }
 
-    .actividades__contenedores {
-        grid-column: span 2;
-    }
 
-    .actividades__descripciones {
-        max-width: 400px;
-    }
+    .alineacion {
+        &-act7 {
+            grid-column: 2/4;
+        }
 
-    .alineacion-act7 {
-        grid-column: 2/4;
-    }
-    
-    .alineacion-act8 {
-        grid-column: 4/6;
+        &-act8 {
+            grid-column: 4/6;
+        }
     }
 }
 
