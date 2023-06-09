@@ -5,8 +5,7 @@
     }
 
     &__boton {
-        font-family: 'Montserrat';
-        font-weight: 600;
+        @include montserrat-600;
         font-size: 1.25rem;
         border-radius: 24px;
         background-color: $color-amarillo;

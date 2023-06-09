@@ -23,15 +23,13 @@
     }
 
     &__nombres {
-        font-family: 'Montserrat';
-        font-weight: 600;
+        @include montserrat-600;
         font-size: 1.188rem;
         padding: 15px 15px;
     }
 
     &__ul {
-        font-family: 'Montserrat';
-        font-weight: 500;
+        @include montserrat-500;
         font-size: 1.063rem;
         line-height: 30px;
         padding: 20px 15px;

@@ -27,14 +27,12 @@
     }
 
     &__titulos {
-        font-family: 'Montserrat';
-        font-weight: 700;
+        @include montserrat-700;
         font-size: 1.563rem;
     }
 
     &__textos {
-        font-family: 'Montserrat';
-        font-weight: 400;
+        @include montserrat-400;
         font-size: 1.125rem;
         line-height: 30px;
         margin: 0px;

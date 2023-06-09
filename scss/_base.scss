@@ -10,6 +10,51 @@ $color-blanco: #FFFFFF;
     align-items: $align;
 }
 
+@mixin nunito-600 {
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+}
+
+@mixin nunito-700 {
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+}
+
+@mixin nunito-800 {
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+}
+
+@mixin nunito-900 {
+    font-family: 'Nunito Sans';
+    font-weight: 900;
+}
+
+@mixin montserrat-400 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+@mixin montserrat-500 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+@mixin montserrat-600 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+@mixin montserrat-700 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+@mixin montserrat-800 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -67,8 +112,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .texto-destacado1 {
-    font-family: 'Nunito Sans';
-    font-weight: 900;
+    @include nunito-900;
+
     font-size: 3rem;
 }
 
@@ -84,8 +129,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .titulo-pag {
-    font-family: 'Montserrat';
-    font-weight: 800;
+    @include montserrat-800;
     font-size: 2rem;
     text-align: center;
     color: $color-negro;

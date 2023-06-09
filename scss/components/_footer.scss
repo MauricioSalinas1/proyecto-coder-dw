@@ -13,8 +13,7 @@
     max-width: 540px;
 
     &__titulo {
-        font-family: 'Nunito sans';
-        font-weight: 900;
+        @include nunito-900;
         font-size: 1.375rem;
         color: $color-blanco;
         text-align: center;
@@ -31,8 +30,7 @@
 
     &__li {
         text-decoration-line: none;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 800;
+        @include nunito-800;
         font-size: 1.188rem;
 
         &:visited  {
@@ -51,8 +49,7 @@
     }
 
     &__rrss-titulo {
-        font-family: 'Nunito Sans';
-        font-weight: 700;
+        @include nunito-700;
         font-size: 1.188rem;
         color: $color-blanco;
     }
@@ -129,7 +126,8 @@
 
     &-parrafo {
         color: $color-blanco;
-        font-family: 'Nunito Sans';
+        @include nunito-600;
+        font-size: 1rem;
         text-align: center;
         margin: 0px;
     }
