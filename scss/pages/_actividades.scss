@@ -52,3 +52,52 @@
     }
 }
 
+@media (min-width: 480px) {
+
+    .actividades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actividades__descripciones {
+        padding: 5px 10px;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .actividades {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 720px;
+    }
+
+    .actividades__contenedores {
+        grid-column: span 2;
+    }
+
+    .actividades__descripciones {
+        max-width: 400px;
+    }
+
+    .alineacion-act7 {
+        grid-column: 2/4;
+    }
+    
+    .alineacion-act8 {
+        grid-column: 4/6;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .actividades {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .actividades {
+        max-width: 1140px;
+    }
+}

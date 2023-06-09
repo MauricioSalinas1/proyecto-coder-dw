@@ -72,3 +72,33 @@
     margin-right: 5px;
     vertical-align: -0.125em;
 }
+
+@media (min-width: 640px) {
+
+    .sucursales__contenedores {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sucursales {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .sucursales {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .sucursales {
+        max-width: 1140px;
+    }
+}
