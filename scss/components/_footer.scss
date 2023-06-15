@@ -23,7 +23,7 @@
     &__ul {
         @include flexbox;
         flex-direction: column;
-        padding: 10px ;
+        padding: 10px;
         color: $color-amarillo;
         gap: 10px;
     }
@@ -33,11 +33,11 @@
         @include nunito-800;
         font-size: 1.188rem;
 
-        &:visited  {
+        &:visited {
             color: $color-amarillo;
         }
 
-        &:link  {
+        &:link {
             color: $color-amarillo;
         }
     }
@@ -53,60 +53,60 @@
         font-size: 1.188rem;
         color: $color-blanco;
     }
-} 
+}
 
-.svg{
+.svg {
     &-fb {
-        width: 42.51px; 
+        width: 42.51px;
         height: 42.51px;
         fill: $color-amarillo;
         transition-duration: 0.2s;
 
-        &:hover{
+        &:hover {
             fill: $color-naranja;
         }
     }
 
     &-ig {
-        width: 39.24px; 
+        width: 39.24px;
         height: 39.24px;
         fill: $color-amarillo;
         transition-duration: 0.2s;
 
-        &:hover{
+        &:hover {
             fill: $color-naranja;
         }
     }
 
     &-tw {
-        width: 43.32px; 
+        width: 43.32px;
         height: 35.15px;
         fill: $color-amarillo;
         transition-duration: 0.2s;
 
-        &:hover{
+        &:hover {
             fill: $color-naranja;
         }
     }
 
     &-yt {
-        width: 55px; 
+        width: 55px;
         height: 38px;
         fill: $color-amarillo;
         transition-duration: 0.2s;
 
-        &:hover{
+        &:hover {
             fill: $color-naranja;
         }
     }
 
     &-tt {
-        width: 35.15px; 
+        width: 35.15px;
         height: 40.05px;
         fill: $color-amarillo;
         transition-duration: 0.2s;
 
-        &:hover{
+        &:hover {
             fill: $color-naranja;
         }
     }
@@ -207,7 +207,7 @@
     .hr-footer {
         max-width: 728px;
     }
-    
+
 }
 
 @media (min-width: 992px) {

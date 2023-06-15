@@ -4,7 +4,7 @@ $color-gris: #D9D9D9;
 $color-naranja: #DBD406;
 $color-blanco: #FFFFFF;
 
-@mixin flexbox($justify:center , $align:center) {
+@mixin flexbox($justify: center, $align: center) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
@@ -61,7 +61,8 @@ $color-blanco: #FFFFFF;
     text-decoration-line: none;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
     margin: 0;
 }

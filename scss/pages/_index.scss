@@ -1,13 +1,13 @@
-.main1{
+.main1 {
     &__div {
 
         &-1 {
-        height: 720px;
-        background-size: cover;
-        background-position: right;
-        overflow-wrap: break-word;
-        @include flexbox;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-1.jpg);
+            height: 720px;
+            background-size: cover;
+            background-position: right;
+            overflow-wrap: break-word;
+            @include flexbox;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/foto-main1-1.jpg);
         }
 
         &-2 {
@@ -28,7 +28,7 @@
             background-position: center;
         }
     }
-    
+
 
     &__p {
         @include nunito-700;
